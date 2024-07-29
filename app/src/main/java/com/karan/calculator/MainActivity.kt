@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         btnADDITION?.setOnClickListener {
             tvResult?.text = "${tvResult?.text.toString().toInt() +2}"
             Toast.makeText(this, "Addition by 2", Toast.LENGTH_SHORT).show()
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Subtraction by 2", Toast.LENGTH_SHORT).show()
         }
         btnMULTIPLY?.setOnClickListener {
-            tvResult?.text="${tvResult?.text.toString().toInt()*2}"
+            tvResult?.text="${tvResult?.text.toString().toInt() *2}"
             Toast.makeText(this, "Multiplication by 2", Toast.LENGTH_SHORT).show()
         }
     }
